@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+:root{
+    --main-bg-color: #3d2a66;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: var(--main-bg-color);
+    font-family: Playfair, cursive;
+    display: flex;
+    height: 58px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    padding: 5px;
+    margin: 0 12px;
+}
+nav ul{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+nav ul li{
+    padding: 0 23px;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(143, 209, 218);
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 400px;
+    height: 32px;
+    border-radius: 3px;
+    margin: 0 20px;
+    padding: 0px 10px;
+    background-image: url(../img/blue-search-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.search button{
+    font-family: Playfair, cursive;
+}
+.container{
+    min-height: calc(100vh - 58px - 8vh);
+}
+.slider{
+    margin: 12px auto;
+    width: 70vw;
+}
+.my-2{
+    margin: 10px 0;
+}
+.card-item{
+    display: inline-flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 20px;
+}
+.card{
+    max-width: 91vw;
+    margin: 30px auto;
+}
+.text-center{
+    text-align: center;
+}
+.my-1{
+    margin: 4px 0;
+}
+
+footer{
+    height: 8vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: Playfair, cursive;
+}
